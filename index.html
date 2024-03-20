@@ -18,7 +18,7 @@
         }
 
         .calculator {
-            background: #3a4452;
+            background: cornflowerblue;
             padding: 20px;
             border-radius: 10px;
         }
@@ -28,7 +28,7 @@
             outline: 0;
             width: 60px;
             height: 60px;
-            border-radius: 10px;
+            border-radius: 20%;
             box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
             background: transparent;
             font-size: 20px;
@@ -52,7 +52,7 @@
         }
 
         form input.equal {
-            width: 145px;
+            width: 60px;
         }
 
         form input.operator {
@@ -100,6 +100,7 @@
                 <div>
                     <input type="button" value="00" onclick="display.value +='00'">
                     <input type="button" value="0" onclick="display.value +='0'">
+                    <input type="button" value="%" onclick="display.value +='%'" class="operator">
                     <input type="button" value="=" class="equal operator" onclick="display.value= eval(display.value)">
 
 
